@@ -1,0 +1,671 @@
+body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1em;
+}
+
+main {
+    min-height: 94.6vh;
+}
+
+.form-header-admin {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--black);
+    color: white;
+    width: 100%;
+    height: 80px;
+}
+
+.form-header-admin p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.input-admin {
+    margin: auto;
+    width: 300px;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid var(--ligth-black);
+}
+
+/* #region header-admin */
+
+header{
+    display: block;
+}
+
+.header-admin {
+    background-color: var(--black);
+    width: 300px;
+    height: 100%;
+}
+
+.nav-header-admin {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.nav-header-admin ul {
+    padding: 0px;
+}
+
+.nav-header-admin ul li {
+    margin-bottom: 0.5em;
+}
+
+/* #endregion */
+
+/* #region auth-admin */
+
+.auth-admin {
+    margin-top: 2em;
+}
+
+.insert-admin {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    margin: auto;
+    width: 450px;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+}
+
+#btnAdmin {
+    width: 130px;
+    padding: 5px 15px;
+    background-color: var(--black);
+    color: white;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+/* #endregion */
+
+/* #region category-admin */
+
+.category-admin {
+    margin-top: 2em;
+}
+
+.form-category {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    width: 450px;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+#btnAddCategory {
+    margin: auto;
+    width: 130px;
+    background-color: var(--black);
+    color: white;
+    padding: 5px 15px;
+    margin-bottom: 2em;
+}
+
+.buttons-admin-category {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 2em;
+}
+
+.btn-admin-category {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    padding: 10px 35px;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-category {
+    width: 100px;
+    padding: 5px 10px;
+    margin: auto;
+}
+
+.btn-admin-category p {
+    margin: auto;
+    margin: 0px;
+    width: auto;
+}
+
+.category-table-admin {
+    width: 400px;
+    margin: auto;
+}
+
+.category-table-admin tr {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    border-bottom: 1px solid var(--ligth-black);
+    padding: 5px 0px;
+}
+
+.products-table {
+    margin: auto;
+    margin-top: 2em;
+}
+
+.products-table tr {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 35px 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    border-bottom: 1px solid var(--ligth-black);
+    padding: 5px 0px;
+}
+
+.btn-edit-admin {
+    background-color: var(--black);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* #endregion */
+
+/* #region products-admin */
+
+.form-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0em 2em;
+    width: 850px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.form-products-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+    padding-bottom: 2em;
+}
+
+.form-products-content p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.form-products .error{
+    grid-column: 1/3;
+}
+
+#btnAddProduct {
+    grid-column: 1/3;
+    margin: auto;
+    width: 140px;
+    padding: 5px 15px;
+    background-color: var(--black);
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.image-admin-product {
+    width: 80px;
+    height: 80px;
+}
+
+/* #endregion */
+
+/* #region product-admin-show */
+
+.product-update {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 950px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.product-update-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+}
+
+.product-update-content p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.product-update input {
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid var(--ligth-black);
+    padding: 5px;
+}
+
+.show-category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.show-category p {
+    margin: 0px;
+}
+
+.btn-update {
+    grid-column: 1/3;
+    width: 100px;
+    padding: 10px 15px;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+}
+
+/* #endregion */
+
+/* #region order-admin */
+
+.form-check {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.btn-form-check {
+    background-color: var(--black);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.orders-table {
+    margin: auto;
+    margin-top: 2em;
+}
+
+.orders-table tr {
+    display: grid;
+    grid-template-columns: 110px 145px 1fr 90px repeat(2, 1fr) 95px 110px 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: 2px;
+    padding: 5px;
+    border-bottom: 1px solid var(--ligth-black);
+}
+
+.btn-show-order {
+    background-color: var(--black);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-update-order {
+    background-color: var(--black);
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* #endregion */
+
+/* #region show-order */
+
+.div-info-show-order {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 450px;
+    margin: auto;
+    margin-top: 2em;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+}
+
+.div-info-show-order-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    width: 300px;
+    margin: auto;
+}
+
+.table-product-order {
+    width: 750px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.table-product-order tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 5px 0px;
+    border-bottom: 1px solid var(--ligth-black);
+}
+
+/* #endregion */
+
+/* #region update-status */
+
+.form-update-status {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 450px;
+    margin: auto;
+    margin-top: 2em;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+}
+
+.form-update-status-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.form-update-status-content div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-update-status{
+    width: 205px;
+    margin: auto;
+    padding: 10px 5px;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-update-status p{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* #endregion */
+
+/* #region add.admin */
+
+.form-add-admin {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    width: 500px;
+    margin: auto;
+    margin-top: 2em;
+    border: 1px solid var(--ligth-black);
+}
+
+.form-add-admin input {
+    width: 300px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid var(--ligth-black);
+    margin: auto;
+}
+
+.form-add-admin p {
+    margin: 0px;
+}
+
+.btn-add-admin {
+    width: 100px;
+    padding: 10px 15px;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.tables-add-admin {
+    margin: auto;
+    margin-top: 2em;
+}
+
+.tables-add-admin tr {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px solid var(--ligth-black);
+}
+
+/* #endregion */
+
+/* #region characteristic-admin */
+
+.form-addCharacteristic {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 450px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+}
+
+.btnAddCharacteristic {
+    width: 100px;
+    padding: 10px 15px;
+    margin: auto;
+    margin-bottom: 2em;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.btnAddCharacteristic p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.characteristic-tables {
+    width: 320px;
+    margin: auto;
+}
+
+.characteristic-tables tr {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 5px 0px;
+    border-bottom: 1px solid var(--ligth-black);
+}
+
+/* #endregion */
+
+/* #region component-admin */
+
+.form-addComponent {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 450px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid var(--ligth-black);
+    border-radius: 3px;
+}
+
+.textarea-admin {
+    max-width: 300px;
+    margin: auto;
+}
+
+.addComponent {
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--black);
+    color: white;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.addComponent p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.form-btn-accessories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.btn-accessory {
+    width: 190px;
+    padding: 15px 0px;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+}
+
+.btn-accessory p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.components-tables{
+    width: 850px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.components-tables tr{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) 30px 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 5px;
+    border-bottom: 1px solid var(--ligth-black);
+}
+
+.btn-show-component{
+    background-color: var(--black);
+    color: white;
+    width: 120px;
+    padding: 10px 0px;
+    border: none;
+}
+
+/* #endregion */
+
+/* #region show-component */
+
+.show-component{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.show-component-img{
+    width: 300px;
+    object-fit: cover;
+}
+
+/* #endregion */
