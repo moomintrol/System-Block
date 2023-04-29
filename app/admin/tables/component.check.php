@@ -2,11 +2,9 @@
 
 use App\models\Component;
 
-session_start();
+include $_SERVER['DOCUMENT_ROOT'] . "/bootstrap.php";
 unset($_SESSION['product']);
 unset($_SESSION['error']);
-
-include $_SERVER['DOCUMENT_ROOT'] . "/bootstrap.php";
 
 $extensions = ["jpeg", "jpg", "png", "webp", "jfif"];
 $types = ["image/jpg", "image/jpeg", "image/png", "image/webp", "image/jfif"];
