@@ -76,20 +76,4 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.reload();
       }
     });
-
-  // document
-  //   .querySelector(".btn-review")
-  //   .addEventListener("click", async (event) => {
-  //     let form = document.querySelector(".form-review");
-  //     event.preventDefault();
-  //     let fd = new FormData(form);
-  //     let res = await postFormData("/app/tables/review.php", fd);
-  //     if (res.error != null) {
-  //       document.querySelector(".error").style.display = "block";
-  //       document.querySelector(".error").textContent = res.error;
-  //     } else {
-  //       closeModal();
-  //       window.location.reload();
-  //     }
-  //   });
 });

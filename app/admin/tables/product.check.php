@@ -8,8 +8,10 @@ unset($_SESSION['product']);
 unset($_SESSION['error']);
 
 include $_SERVER['DOCUMENT_ROOT'] . "/bootstrap.php";
+
 $extensions = ["jpeg", "jpg", "png", "webp", "jfif"];
 $types = ["image/jpg", "image/jpeg", "image/png", "image/webp", "image/jfif"];
+
 $product = Product::getProduct($_POST['name']);
 
 if (isset($_POST['btnAddProduct'])) {
@@ -25,10 +27,24 @@ if (isset($_POST['btnAddProduct'])) {
         $tmpName = $_FILES['image']['tmp_name'];
         $error = $_FILES['image']['error'];
         $size = $_FILES['image']['size'];
-    }
 
-    if (!move_uploaded_file($tmpName, $_SERVER["DOCUMENT_ROOT"] . "/upload/System-Block/$name")) {
-        $_SESSION['error'] = "Не получилось переместить файл";
+        $path_parts = pathinfo($name);
+
+        $ext = $path_parts["extension"];
+        $mimeType = mime_content_type($tmpName);
+
+        if (in_array($ext, $extensions) && in_array($mimeType, $types)) {
+
+            if ($error == 0) {
+                if (!move_uploaded_file($tmpName, $_SERVER["DOCUMENT_ROOT"] . "/upload/System-Block/$name")) {
+                    $_SESSION['error'] = "Не получилось переместить файл";
+                }
+            } else {
+                $_SESSION['error'] = 'Ошибка';
+            }
+        } else {
+            $_SESSION['error'] = 'Расширение файла должно быть: ' . implode(", ", $extensions);
+        }
     }
 
     if (isset($_SESSION['error'])) {
